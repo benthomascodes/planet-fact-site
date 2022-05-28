@@ -99,6 +99,10 @@ body.open {
   display: none;
 }
 
+#m-tabs {
+  display: none;
+}
+
 #main {
   max-width: 1100px;
   padding-top: 5rem;
@@ -250,6 +254,7 @@ body.open {
     flex-direction: column;
     background: #070724;
     padding: 1.25rem 0.75rem;
+    z-index: 1;
     transition: all 500ms cubic-bezier(1, 0, 0, 1);
   }
   #header #nav-bar .nav-list.open {
@@ -332,7 +337,56 @@ body.open {
     background: rgba(255, 255, 255, 0.1);
   }
 
-  #main {
+  #m-tabs {
+    display: block;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+  #m-tabs .tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #m-tabs .tabs .tab {
+    position: relative;
+  }
+  #m-tabs .tabs .tab button {
+    font-family: "Spartan Bold", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1.93px;
+    text-transform: uppercase;
+  }
+  #m-tabs .tabs .tab button.active {
+    color: #FFFFFF;
+  }
+  #m-tabs .tabs .tab button.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 100%;
+    background: #419EBB;
+  }
+  #m-tabs .tabs .tab button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  #main #info,
+#main #buttons,
+#main #stats {
     display: none;
   }
 }

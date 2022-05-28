@@ -22,4 +22,12 @@ $(document).ready(function () {
         var show = $(this).data('show');
         $(show).removeClass("hide").siblings().addClass("hide");
     });
+    $('#m-tabs .tabs .tab button').click(function () {
+        // Changes active button
+        $('#m-tabs .tabs .tab button').removeClass("active");
+        $(this).addClass("active");
+        // Changes hidden content
+        var show = $(this).data('show');
+        $(show).removeClass("hide").siblings().addClass("hide");
+    });
 });
