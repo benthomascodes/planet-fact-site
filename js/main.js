@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    $('#nav-toggle').click(function () {
+        $(this).toggleClass('open');
+        $('#nav-bar .nav-list').toggleClass('open');
+        $('body').toggleClass('open');
+    });
+    $('#nav-bar .nav-list .nav-link').click(function () {
+        $('#nav-toggle').removeClass('open');
+        $('#nav-bar .nav-list').removeClass('open');
+        $('body').removeClass('open');
+    });
     $('#nav-bar .nav-list .nav-link').click(function () {
         // Changes active link
         $('#nav-bar .nav-list .nav-link').removeClass("active");

@@ -16,6 +16,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+body.open {
+  overflow: hidden;
+  animation: 0.2s delay-overflow;
+}
 
 #header {
   display: flex;
@@ -76,6 +80,9 @@ body {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+#header #nav-bar .nav-list li .nav-link:hover {
+  color: rgb(255, 255, 255);
+}
 #header #nav-bar .nav-list li .nav-link.active {
   color: rgb(255, 255, 255);
 }
@@ -88,12 +95,12 @@ body {
   width: 100%;
   background: #419EBB;
 }
-#header #nav-bar .nav-list li .nav-link:hover {
-  color: rgb(255, 255, 255);
+#header #nav-bar .nav-toggle {
+  display: none;
 }
 
 #main {
-  max-width: 1140px;
+  max-width: 1100px;
   padding-top: 5rem;
   padding-bottom: 3rem;
 }
@@ -227,6 +234,107 @@ body {
   line-height: 50px;
   letter-spacing: -1.5px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 575.98px) {
+  #header {
+    height: 60px;
+    padding: 0 0.75rem;
+  }
+  #header #nav-bar .nav-list {
+    position: fixed;
+    top: 60px;
+    left: -100vw;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: #070724;
+    padding: 1.25rem 0.75rem;
+    transition: all 500ms cubic-bezier(1, 0, 0, 1);
+  }
+  #header #nav-bar .nav-list.open {
+    left: 0;
+  }
+  #header #nav-bar .nav-list li {
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  #header #nav-bar .nav-list li:last-child {
+    border-bottom: 0;
+  }
+  #header #nav-bar .nav-list li:nth-child(1) .nav-link .dot {
+    background-color: #DEF4FC;
+  }
+  #header #nav-bar .nav-list li:nth-child(2) .nav-link .dot {
+    background-color: #F7CC7F;
+  }
+  #header #nav-bar .nav-list li:nth-child(3) .nav-link .dot {
+    background-color: #545BFE;
+  }
+  #header #nav-bar .nav-list li:nth-child(4) .nav-link .dot {
+    background-color: #FF6A45;
+  }
+  #header #nav-bar .nav-list li:nth-child(5) .nav-link .dot {
+    background-color: #ECAD7A;
+  }
+  #header #nav-bar .nav-list li:nth-child(6) .nav-link .dot {
+    background-color: #FCCB6B;
+  }
+  #header #nav-bar .nav-list li:nth-child(7) .nav-link .dot {
+    background-color: #65F0D5;
+  }
+  #header #nav-bar .nav-list li:nth-child(8) .nav-link .dot {
+    background-color: #497EFA;
+  }
+  #header #nav-bar .nav-list li .nav-link {
+    font-size: 15px;
+    letter-spacing: 1.36px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+  #header #nav-bar .nav-list li .nav-link.active::before {
+    display: none;
+  }
+  #header #nav-bar .nav-list li .nav-link::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: url(../images/icon-chevron.svg) no-repeat;
+    height: 10px;
+    width: 10px;
+  }
+  #header #nav-bar .nav-list li .nav-link .dot {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 1.5rem;
+    border-radius: 50%;
+  }
+  #header #nav-bar #nav-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 17px;
+  }
+  #header #nav-bar #nav-toggle .bar {
+    width: 100%;
+    height: 3px;
+    border-radius: 0.8rem;
+    background: rgb(255, 255, 255);
+    transition: all ease-in-out 0.2s;
+  }
+  #header #nav-bar #nav-toggle.open .bar {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  #main {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
