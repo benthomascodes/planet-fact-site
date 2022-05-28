@@ -81,11 +81,24 @@ body {
   padding-top: 5rem;
   padding-bottom: 3rem;
 }
-#main #planet {
+#main .planet {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   height: 515px;
+}
+#main .planet.hide {
+  display: none;
+}
+#main .planet .sub {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  width: 163px;
+  height: 199px;
+  margin: 0 auto;
 }
 #main #info .title {
   font-family: "Antonio", sans-serif;
@@ -103,6 +116,9 @@ body {
   color: #FFFFFF;
   line-height: 25px;
   margin-bottom: 1.5rem;
+}
+#main #info .content.hide {
+  display: none;
 }
 #main #info .source {
   font-family: "Spartan Regular", sans-serif;
