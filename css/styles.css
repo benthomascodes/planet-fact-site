@@ -62,10 +62,11 @@ body {
   margin-right: 0;
 }
 #header #nav-bar .nav-list li .nav-link {
+  position: relative;
   font-family: "Spartan Bold", sans-serif;
   font-size: 11px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.75);
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
@@ -74,6 +75,21 @@ body {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+#header #nav-bar .nav-list li .nav-link.active {
+  color: rgb(255, 255, 255);
+}
+#header #nav-bar .nav-list li .nav-link.active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -36px;
+  height: 3px;
+  width: 100%;
+  background: #419EBB;
+}
+#header #nav-bar .nav-list li .nav-link:hover {
+  color: rgb(255, 255, 255);
 }
 
 #main {
