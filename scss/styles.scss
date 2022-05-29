@@ -72,6 +72,150 @@ body {
                     margin-right: 0;
                 }
 
+                &:nth-child(1) {
+                    .nav-link {
+                        &.active {
+                            color: rgba(255, 255, 255, 1);
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: -36px;
+                                height: 3px;
+                                width: 100%;
+                                background: #419EBB;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    .nav-link {
+                        &.active {
+                            color: rgba(255, 255, 255, 1);
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: -36px;
+                                height: 3px;
+                                width: 100%;
+                                background: #EDA249;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .nav-link {
+                        &.active {
+                            color: rgba(255, 255, 255, 1);
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: -36px;
+                                height: 3px;
+                                width: 100%;
+                                background: #6D2ED5;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    .nav-link {
+                        &.active {
+                            color: rgba(255, 255, 255, 1);
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: -36px;
+                                height: 3px;
+                                width: 100%;
+                                background: #D14C32;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(5) {
+                    .nav-link {
+                        &.active {
+                            color: rgba(255, 255, 255, 1);
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: -36px;
+                                height: 3px;
+                                width: 100%;
+                                background: #D83A34;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(6) {
+                    .nav-link {
+                        &.active {
+                            color: rgba(255, 255, 255, 1);
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: -36px;
+                                height: 3px;
+                                width: 100%;
+                                background: #CD5120;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(7) {
+                    .nav-link {
+                        &.active {
+                            color: rgba(255, 255, 255, 1);
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: -36px;
+                                height: 3px;
+                                width: 100%;
+                                background: #1EC1A2;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(8) {
+                    .nav-link {
+                        &.active {
+                            color: rgba(255, 255, 255, 1);
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: -36px;
+                                height: 3px;
+                                width: 100%;
+                                background: #2D68F0;
+                            }
+                        }
+                    }
+                }
+
                 .nav-link {
                     position: relative;
                     font-family: 'Spartan Bold',
@@ -90,20 +234,6 @@ body {
 
                     &:hover {
                         color: rgba(255, 255, 255, 1);
-                    }
-
-                    &.active {
-                        color: rgba(255, 255, 255, 1);
-
-                        &::before {
-                            content: "";
-                            display: block;
-                            position: absolute;
-                            top: -36px;
-                            height: 3px;
-                            width: 100%;
-                            background: #419EBB;
-                        }
                     }
                 }
             }
@@ -376,6 +506,7 @@ body {
 
         #stats {
             padding: 1rem;
+
             .title {
                 font-size: 8px;
                 line-height: 16px;
