@@ -95,7 +95,7 @@ body.open {
   width: 100%;
   background: #419EBB;
 }
-#header #nav-bar .nav-toggle {
+#header #nav-bar #nav-toggle {
   display: none;
 }
 
@@ -104,7 +104,6 @@ body.open {
 }
 
 #main {
-  max-width: 1100px;
   padding-top: 5rem;
   padding-bottom: 3rem;
 }
@@ -124,7 +123,6 @@ body.open {
   right: 0;
   bottom: -20px;
   width: 163px;
-  height: 199px;
   margin: 0 auto;
 }
 #main #info .title {
@@ -240,7 +238,82 @@ body.open {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (min-width: 1400px) {
+  #main {
+    max-width: 1100px;
+  }
+}
+@media screen and (min-width: 767.99px) and (max-width: 991.98px) {
+  #header {
+    height: 160px;
+    align-items: flex-start;
+  }
+  #header #nav-bar {
+    flex-direction: column;
+  }
+  #header #nav-bar .logo {
+    margin: 2rem 0 2.5rem 0;
+  }
+  #header #nav-bar .nav-list li .nav-link.active::before {
+    top: 20px;
+  }
+
+  #main {
+    padding-top: 9rem;
+  }
+  #main .planet {
+    height: auto;
+    margin-bottom: 8rem;
+  }
+  #main .planet .mercury {
+    width: 184px;
+  }
+  #main article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #main article #info {
+    width: 340px;
+  }
+  #main article #info .title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  #main article #info .content {
+    font-size: 11px;
+    line-height: 22px;
+  }
+  #main article #info .source {
+    font-size: 12px;
+  }
+  #main article #buttons {
+    width: 280px;
+  }
+  #main article #buttons .btn {
+    font-size: 9px;
+    line-height: 25px;
+    padding: 0 1.25rem;
+  }
+  #main article #buttons .btn .number {
+    margin-right: 0.5rem;
+  }
+  #main #stats {
+    padding: 1rem;
+  }
+  #main #stats .title {
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: 0.73px;
+  }
+  #main #stats .content {
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.9px;
+  }
+}
+@media screen and (max-width: 767.98px) {
   #header {
     height: 60px;
     padding: 0 0.75rem;
@@ -384,9 +457,60 @@ body.open {
     box-shadow: none;
   }
 
-  #main #info,
-#main #buttons,
-#main #stats {
+  #main {
+    padding-bottom: 1.5rem;
+  }
+  #main .planet {
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  #main .planet .mercury {
+    width: 111px;
+  }
+  #main .planet .sub {
+    bottom: -60px;
+    width: 70px;
+  }
+  #main #info {
+    text-align: center;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+  }
+  #main #info .title {
+    font-size: 40px;
+    line-height: 51px;
+  }
+  #main #info .content {
+    font-size: 11px;
+    line-height: 22px;
+  }
+  #main #info .source {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  #main #info .source .link {
+    margin-left: 0.05rem;
+  }
+  #main #stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  #main #stats .title {
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: 0.73px;
+    margin: 0;
+  }
+  #main #stats .content {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.75px;
+  }
+  #main #buttons {
     display: none;
   }
 }
