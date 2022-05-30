@@ -429,6 +429,7 @@ body.open {
   #main article #info .content {
     font-size: 11px;
     line-height: 22px;
+    height: 120px;
   }
   #main article #info .source {
     font-size: 12px;
@@ -650,6 +651,7 @@ body.open {
   #main article #info .content {
     font-size: 11px;
     line-height: 22px;
+    height: auto;
   }
   #main article #info .source {
     font-size: 12px;
