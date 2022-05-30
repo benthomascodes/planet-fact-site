@@ -658,6 +658,9 @@ body.open {
   #main article #info .source .link {
     margin-left: 0.05rem;
   }
+  #main article #buttons {
+    display: none;
+  }
   #main #stats {
     display: flex;
     flex-direction: row;
@@ -676,9 +679,6 @@ body.open {
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.75px;
-  }
-  #main #buttons {
-    display: none;
   }
 }
 

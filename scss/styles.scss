@@ -943,6 +943,10 @@ body {
                     }
                 }
             }
+
+            #buttons {
+                display: none;
+            }
         }
 
         #stats {
@@ -966,10 +970,6 @@ body {
                 line-height: 25px;
                 letter-spacing: -.75px;
             }
-        }
-
-        #buttons {
-            display: none;
         }
     }
 }
