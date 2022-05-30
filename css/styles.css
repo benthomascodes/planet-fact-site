@@ -357,6 +357,9 @@ body.open {
   #main .planet .mercury {
     width: 184px;
   }
+  #main .planet .venus {
+    width: 253px;
+  }
   #main article {
     display: flex;
     flex-direction: row;
