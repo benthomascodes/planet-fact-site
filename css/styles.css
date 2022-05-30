@@ -343,7 +343,7 @@ body.open {
   #header #nav-bar .logo {
     margin: 2rem 0 2.5rem 0;
   }
-  #header #nav-bar .nav-list li .nav-link.active::before {
+  #header #nav-bar .nav-list li:nth-child(1) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(2) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(3) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(4) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(5) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(6) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(7) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(8) .nav-link.active::before {
     top: 20px;
   }
 
@@ -359,6 +359,29 @@ body.open {
   }
   #main .planet .venus {
     width: 253px;
+  }
+  #main .planet .earth,
+#main .planet .neptune {
+    width: 285px;
+  }
+  #main .planet .mars {
+    width: 213px;
+  }
+  #main .planet .jupiter {
+    width: 369px;
+  }
+  #main .planet .saturn {
+    width: 422px;
+  }
+  #main .planet .uranus {
+    width: 290px;
+  }
+  #main .planet .sub {
+    bottom: -80px;
+    width: 100px;
+  }
+  #main .planet .saturn-sub {
+    bottom: -5px;
   }
   #main article {
     display: flex;
@@ -457,14 +480,14 @@ body.open {
   #header #nav-bar .nav-list li:nth-child(8) .nav-link .dot {
     background-color: #497EFA;
   }
+  #header #nav-bar .nav-list li:nth-child(1) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(2) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(3) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(4) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(5) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(6) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(7) .nav-link.active::before, #header #nav-bar .nav-list li:nth-child(8) .nav-link.active::before {
+    display: none;
+  }
   #header #nav-bar .nav-list li .nav-link {
     font-size: 15px;
     letter-spacing: 1.36px;
     color: #FFFFFF;
     opacity: 1;
-  }
-  #header #nav-bar .nav-list li .nav-link.active::before {
-    display: none;
   }
   #header #nav-bar .nav-list li .nav-link::after {
     content: "";
@@ -559,9 +582,31 @@ body.open {
   #main .planet .mercury {
     width: 111px;
   }
+  #main .planet .venus {
+    width: 154px;
+  }
+  #main .planet .earth,
+#main .planet .neptune {
+    width: 173px;
+  }
+  #main .planet .mars {
+    width: 129px;
+  }
+  #main .planet .jupiter {
+    width: 224px;
+  }
+  #main .planet .saturn {
+    width: 256px;
+  }
+  #main .planet .uranus {
+    width: 176px;
+  }
   #main .planet .sub {
     bottom: -60px;
     width: 70px;
+  }
+  #main .planet .saturn-sub {
+    bottom: -15px;
   }
   #main #info {
     text-align: center;
